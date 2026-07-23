@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171512">
+  <meta name="description" content="Salon OS konceptdemo for Super Cut på Frederiksberg.">
+  <title>Super Cut × Salon OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Gå til indhold</a>
+  <div class="demo-bar">
+    <span>Konceptdemo · tider, priser og kundedata er eksempler</span>
+    <div class="mode-switch" role="group" aria-label="Skift demooplevelse">
+      <button class="mode-button is-active" data-mode="public">Kundeoplevelse</button>
+      <button class="mode-button" data-mode="salon">Salon OS</button>
+    </div>
+  </div>
+
+  <div id="public-app">
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Super Cut forside">SUPER CUT</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="public-nav">Menu</button>
+      <nav id="public-nav" class="public-nav" aria-label="Primær navigation">
+        <a href="#services">Behandlinger</a>
+        <a href="#work">Resultater</a>
+        <a href="#about">Om</a>
+        <button class="button button-dark" data-start-booking>Book tid</button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=2200&q=88" alt="Lyst, elegant frisørmiljø">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow light">Personlig hårpleje · Frederiksberg</p>
+          <h1>Beautiful hair<br>starts with trust.</h1>
+          <p class="hero-copy">Klip, farve og extensions med den samme frisør — fra den første rådgivning til det færdige resultat.</p>
+          <div class="hero-actions">
+            <button class="button button-light" data-start-booking>Book tid</button>
+            <a class="text-link light" href="#services">Se behandlinger <span>↘</span></a>
+          </div>
+          <p class="trust-line">4,7 på Google · Falkoner Allé 112</p>
+        </div>
+      </section>
+
+      <section id="services" class="section services-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Udvalgte behandlinger</p>
+          <h2>Skabt til dit hår.<br>Ikke til en standard.</h2>
+          <p>Hver behandling begynder med en ærlig samtale om dit hår, din hverdag og det resultat, du ønsker.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal" data-service="Balayage">
+            <div class="image-wrap">
+              <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1200&q=86" alt="Blond balayage med naturligt fald">
+              <span class="card-index">01</span>
+            </div>
+            <div class="card-copy">
+              <div><h3>Farve & blond</h3><p>Balayage, highlights og nuancer med dybde.</p></div>
+              <button class="circle-button" aria-label="Se farve og blond">↗</button>
+            </div>
+          </article>
+          <article class="service-card reveal" data-service="Dameklip">
+            <div class="image-wrap">
+              <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=86" alt="Præcisionsklip i lyst salonmiljø">
+              <span class="card-index">02</span>
+            </div>
+            <div class="card-copy">
+              <div><h3>Klip & styling</h3><p>Form, bevægelse og et resultat, der holder.</p></div>
+              <button class="circle-button" aria-label="Se klip og styling">↗</button>
+            </div>
+          </article>
+          <article class="service-card reveal" data-service="Extensions">
+            <div class="image-wrap">
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=86" alt="Langt velplejet hår med fylde">
+              <span class="card-index">03</span>
+            </div>
+            <div class="card-copy">
+              <div><h3>Extensions</h3><p>Længde og fylde tilpasset dit eget hår.</p></div>
+              <button class="circle-button" aria-label="Se extensions">↗</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section transformation-section">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Resultatet</p>
+          <h2>En forandring,<br>der stadig føles som dig.</h2>
+        </div>
+        <div class="before-after reveal" id="before-after">
+          <img class="after-image" src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1600&q=88" alt="Efter en blond hårbehandling">
+          <div class="before-layer" id="before-layer">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1600&q=88" alt="Før hårbehandlingen">
+          </div>
+          <span class="compare-label before-label">Før</span>
+          <span class="compare-label after-label">Efter</span>
+          <input id="compare-range" type="range" min="0" max="100" value="48" aria-label="Sammenlign før og efter">
+          <div class="compare-handle" id="compare-handle" aria-hidden="true"><span>↔</span></div>
+        </div>
+      </section>
+
+      <section id="about" class="philosophy-section">
+        <div class="philosophy-image reveal">
+          <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1400&q=88" alt="Frisør arbejder koncentreret med en kunde">
+        </div>
+        <div class="philosophy-copy reveal">
+          <p class="eyebrow light">Super Cut</p>
+          <h2>Samme frisør.<br>Hele vejen.</h2>
+          <p>Hos Super Cut bliver du mødt af den samme frisør fra rådgivning til færdigt resultat. Det skaber ro, kontinuitet og en behandling, der bliver mere personlig for hvert besøg.</p>
+          <dl class="facts">
+            <div><dt>Adresse</dt><dd>Falkoner Allé 112<br>2000 Frederiksberg</dd></div>
+            <div><dt>Telefon</dt><dd><a href="tel:+4535351716">35 35 17 16</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://instagram.com/supercut_frb" target="_blank" rel="noreferrer">@supercut_frb</a></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section reviews-section">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Kundernes ord · demotekst</p>
+          <h2>Det bedste resultat<br>begynder med at lytte.</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote class="review reveal"><div class="stars">★★★★★</div><p>“Jeg følte mig set og rådgivet hele vejen. Farven blev præcis så naturlig, som jeg håbede.”</p><cite>— Maria, balayage</cite></blockquote>
+          <blockquote class="review reveal"><div class="stars">★★★★★</div><p>“Rolig stemning, ærlig vejledning og et resultat, jeg stadig elsker flere uger efter.”</p><cite>— Sofie, klip</cite></blockquote>
+          <blockquote class="review reveal"><div class="stars">★★★★★</div><p>“Mine extensions ser ud som mit eget hår. Det er første gang, jeg har følt mig helt tryg ved dem.”</p><cite>— Anne, extensions</cite></blockquote>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow light">Din næste tid</p>
+        <h2>Lad os finde den<br>rigtige behandling.</h2>
+        <button class="button button-light" data-start-booking>Book tid</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><span>SUPER CUT</span><small>Powered by Salon OS</small></div>
+      <div><p>Falkoner Allé 112<br>2000 Frederiksberg</p></div>
+      <div><a href="tel:+4535351716">35 35 17 16</a><a href="https://instagram.com/supercut_frb">@supercut_frb</a></div>
+    </footer>
+  </div>
+
+  <div id="booking-overlay" class="booking-overlay" hidden>
+    <div class="booking-shell">
+      <header class="booking-header">
+        <button class="icon-button" id="booking-back" aria-label="Gå tilbage">←</button>
+        <div class="booking-brand">SUPER CUT</div>
+        <button class="icon-button" id="booking-close" aria-label="Luk booking">×</button>
+      </header>
+      <div class="progress-track"><span id="progress-fill"></span></div>
+      <main id="booking-content" class="booking-content" aria-live="polite"></main>
+    </div>
+  </div>
+
+  <div id="salon-app" hidden>
+    <aside class="salon-sidebar">
+      <div class="salon-logo"><span>S</span><strong>Salon OS</strong></div>
+      <nav aria-label="Salon OS navigation">
+        <button class="salon-nav is-active" data-view="today"><span>⌂</span>I dag</button>
+        <button class="salon-nav" data-view="calendar"><span>□</span>Kalender</button>
+        <button class="salon-nav" data-view="customers"><span>◎</span>Kunder</button>
+        <button class="salon-nav" data-view="followup"><span>↗</span>Opfølgning <b>3</b></button>
+        <button class="salon-nav" data-view="future"><span>＋</span>Muligheder</button>
+      </nav>
+      <div class="owner-card"><div class="avatar">VS</div><div><strong>Valdeta</strong><small>Super Cut</small></div></div>
+    </aside>
+    <main class="salon-main">
+      <header class="salon-topbar">
+        <button class="mobile-salon-menu" aria-label="Åbn menu">Salon OS</button>
+        <p id="view-kicker">Torsdag · 23. juli</p>
+        <button class="notification-button" aria-label="Notifikationer">●</button>
+      </header>
+      <div id="salon-content"></div>
+    </main>
+    <nav class="salon-bottom-nav" aria-label="Mobilnavigation">
+      <button class="salon-nav is-active" data-view="today">I dag</button>
+      <button class="salon-nav" data-view="calendar">Kalender</button>
+      <button class="salon-nav" data-view="customers">Kunder</button>
+      <button class="salon-nav" data-view="followup">Opfølgning</button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

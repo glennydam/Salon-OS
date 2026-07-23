@@ -1,0 +1,25 @@
+{
+  "_notice": "All prices, appointments, reviews and customer records are fictional demo data.",
+  "salon": {
+    "name": "Super Cut",
+    "address": "Falkoner Allé 112, 2000 Frederiksberg",
+    "phone": "35 35 17 16",
+    "instagram": "@supercut_frb",
+    "ownerDemoName": "Valdeta",
+    "googleRatingShown": "4.7"
+  },
+  "treatments": [
+    {"name":"Dameklip","category":"Klip & styling","durationMinutes":60,"displayPrice":"Demo fra 495 kr."},
+    {"name":"Balayage","category":"Farve & blond","durationMinutes":210,"displayPrice":"Demo fra 1.495 kr."},
+    {"name":"Babylights","category":"Farve & blond","durationMinutes":180,"displayPrice":"Demo fra 1.295 kr."},
+    {"name":"Extensions","category":"Extensions","durationMinutes":null,"displayPrice":"Pris efter konsultation"},
+    {"name":"Farvekonsultation","category":"Konsultation","durationMinutes":20,"displayPrice":"Demo: gratis"}
+  ],
+  "customers": [
+    {"name":"Maria Jensen","treatment":"Balayage","lastVisit":"9 uger siden","status":"VIP","isFictional":true},
+    {"name":"Sofie Lund","treatment":"Dameklip","lastVisit":"I dag","status":"Ny","isFictional":true},
+    {"name":"Anne Madsen","treatment":"Gloss & styling","lastVisit":"8 uger siden","status":"Fast","isFictional":true},
+    {"name":"Nina Holm","treatment":"Highlights","lastVisit":"10 uger siden","status":"Fast","isFictional":true},
+    {"name":"Julie Petersen","treatment":"Klip","lastVisit":"5 måneder siden","status":"Winback","isFictional":true}
+  ]
+}
