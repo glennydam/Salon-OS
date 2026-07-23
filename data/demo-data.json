@@ -5,7 +5,7 @@
     "address": "Falkoner Allé 112, 2000 Frederiksberg",
     "phone": "35 35 17 16",
     "instagram": "@supercut_frb",
-    "ownerDemoName": "Valdeta",
+    "ownerDemoName": "Vanessa",
     "googleRatingShown": "4.7"
   },
   "treatments": [
@@ -16,7 +16,7 @@
     {"name":"Farvekonsultation","category":"Konsultation","durationMinutes":20,"displayPrice":"Demo: gratis"}
   ],
   "customers": [
-    {"name":"Maria Jensen","treatment":"Balayage","lastVisit":"9 uger siden","status":"VIP","isFictional":true},
+    {"name":"Maria Jensen","treatment":"Balayage","lastVisit":"9 uger siden","status":"Fast","isFictional":true},
     {"name":"Sofie Lund","treatment":"Dameklip","lastVisit":"I dag","status":"Ny","isFictional":true},
     {"name":"Anne Madsen","treatment":"Gloss & styling","lastVisit":"8 uger siden","status":"Fast","isFictional":true},
     {"name":"Nina Holm","treatment":"Highlights","lastVisit":"10 uger siden","status":"Fast","isFictional":true},
